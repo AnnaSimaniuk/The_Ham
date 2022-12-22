@@ -1180,7 +1180,7 @@ body {
 
 .page_one {
   width: 100vw;
-  background-image: url("/img/Sections background/section-1(header).jpg");
+  background-image: url("../img/Sections background/section-1(header).jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
