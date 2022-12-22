@@ -2,7 +2,7 @@
 
 import {openPopup, popupClick, popupImage} from "./index.js";
 
-const ourWorksImgLinks = ['../img/graphic design/graphic-design1.jpg', '../img/landing page/landing-page1.jpg', '../img/web design/web-design5.jpg', '../img/wordpress/wordpress1.jpg',
+const ourWorksImgLinks = ['../../img/graphic design/graphic-design1.jpg', '../img/landing page/landing-page1.jpg', '../img/web design/web-design5.jpg', '../img/wordpress/wordpress1.jpg',
     '../img/graphic design/graphic-design2.jpg', '../img/landing page/landing-page2.jpg', '../img/web design/web-design1.jpg', '../img/wordpress/wordpress2.jpg',
     '../img/graphic design/graphic-design3.jpg', '../img/landing page/landing-page3.jpg', '../img/web design/web-design2.jpg', '../img/wordpress/wordpress3.jpg',
     '../img/graphic design/graphic-design4.jpg', '../img/landing page/landing-page4.jpg', '../img/web design/web-design3.jpg', '../img/wordpress/wordpress4.jpg',
