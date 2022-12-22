@@ -4,9 +4,9 @@ import {load} from "./our amazing work.js";
 import {openPopup, popupClick, popupImage} from "./index.js";
 
 export const galleryWrapper = document.querySelector('.gallery_wrapper');
-const imgLinks = ['../img/gallery/vanglo-house-1.png', '../img/gallery/skyscraper.png', '../img/gallery/interior.png',
-    '../img/gallery/vanglo-house-1.png', '../img/gallery/vanglo-house-2.png', '../img/gallery/interior.png',
-    '../img/gallery/arch.png', '../img/gallery/ringve-museum.png', '../img/gallery/vanglo-house-1.png',]
+const imgLinks = ['img/gallery/vanglo-house-1.png', 'img/gallery/skyscraper.png', 'img/gallery/interior.png',
+    'img/gallery/vanglo-house-1.png', 'img/gallery/vanglo-house-2.png', 'img/gallery/interior.png',
+    'img/gallery/arch.png', 'img/gallery/ringve-museum.png', 'img/gallery/vanglo-house-1.png',]
 
 for (let i = 0; i < 9; i++) {
     galleryWrapper.insertAdjacentHTML('beforeend', '<div class="gallery_img popup_img"><div class="gallery_img_hover"><a href="#" class="dandruff"></a><a href="#" class="arrows"></a></div></div>');
@@ -30,9 +30,9 @@ galleryImg[3].style.backgroundImage = 'none';
 
 //load more gallery
 
-const imgLinksLoadMore = ['../img/gallery/house4.png', '../img/gallery/interior-decoration.png', '../img/gallery/house-style.png', '../img/gallery/interior-design.png',
-    '../img/gallery/house.png', '../img/gallery/interior-decor.png', '../img/gallery/house-winter.png',
-    '../img/gallery/interior-style.png', '../img/gallery/house-modern.png',];
+const imgLinksLoadMore = ['img/gallery/house4.png', 'img/gallery/interior-decoration.png', 'img/gallery/house-style.png', 'img/gallery/interior-design.png',
+    'img/gallery/house.png', 'img/gallery/interior-decor.png', 'img/gallery/house-winter.png',
+    'img/gallery/interior-style.png', 'img/gallery/house-modern.png',];
 
 for (let i = 0; i < 9; i++) {
     galleryWrapper.insertAdjacentHTML('beforeend', '<div class="gallery_img popup_img gallery_img_load_more"><div class="gallery_img_hover"><a href="#" class="dandruff"></a><a href="#" class="arrows"></a></div></div>');
@@ -49,7 +49,7 @@ let msnry = new Masonry(galleryWrapper, {
     gutter: 20,
 })
 
-const imgLinks2 = ['../img/gallery/ringve-museum.png', '../img/gallery/Kids-Store-Lighting.png']
+const imgLinks2 = ['img/gallery/ringve-museum.png', 'img/gallery/Kids-Store-Lighting.png']
 const galleryWrapper2 = document.querySelector('.gallery_wrapper2');
 Array.from(galleryWrapper2.children).forEach(el => el.remove());
 for (let j = 0; j < 2; j++) {
@@ -65,9 +65,9 @@ const msnry2 = new Masonry(galleryWrapper2, {
     gutter: 3,
 })
 
-const imgLinks3 = ['../img/gallery/pool.png', '../img/gallery/Kids-Store.png', '../img/gallery/vanglo-house-2.png',
-    '../img/gallery/Kids-Store-Lighting.png', '../img/gallery/vanglo-house-4.png', '../img/gallery/Hourses.png',
-    '../img/gallery/vanglo-house-1.png', '../img/gallery/billionares.png', '../img/gallery/Brazil-staduims.png',]
+const imgLinks3 = ['img/gallery/pool.png', 'img/gallery/Kids-Store.png', 'img/gallery/vanglo-house-2.png',
+    'img/gallery/Kids-Store-Lighting.png', 'img/gallery/vanglo-house-4.png', 'img/gallery/Hourses.png',
+    'img/gallery/vanglo-house-1.png', 'img/gallery/billionares.png', 'img/gallery/Brazil-staduims.png',]
 const galleryWrapper3 = document.querySelector('.gallery_wrapper3');
 Array.from(galleryWrapper3.children).forEach(el => el.remove());
 for (let j = 0; j < 9; j++) {
@@ -121,7 +121,7 @@ galleryBtn.addEventListener('click', () => {
 galleryWrapper.addEventListener('click', e => {
     if (e.target.classList.contains('dandruff')) {
         e.target.setAttribute('target', 'blank')
-        e.target.setAttribute('href', `https://www.google.com/search?q=${e.target.closest('.popup_img').style.backgroundImage.slice(20).replace(/.png"\)/g, '')}&sxsrf=ALiCzsb4rCsCQhDjLjJQ3Ox6AD3oIlol1g:1671364423192&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjK7e_VjYP8AhWcAjQIHYR2AW8Q_AUoAnoECAIQBA&cshid=1671364486459127&biw=1366&bih=657&dpr=1`)
+        e.target.setAttribute('href', `https://www.google.com/search?q=${e.target.closest('.popup_img').style.backgroundImage.slice(17).replace(/.png"\)/g, '')}&sxsrf=ALiCzsb4rCsCQhDjLjJQ3Ox6AD3oIlol1g:1671364423192&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjK7e_VjYP8AhWcAjQIHYR2AW8Q_AUoAnoECAIQBA&cshid=1671364486459127&biw=1366&bih=657&dpr=1`);
     }
 })
 

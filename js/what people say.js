@@ -7,25 +7,25 @@ const feedbackSliderData = [
         content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ad autem cupiditate debitis ea esse hic illoiste, labore laborum magnam minus mollitia nihil nulla obcaecati quos rem ullam, unde vero voluptate. Animidolore explicabo incidunt itaque nisi odio porro ratione repellat sapiente voluptas.',
         author: 'Angelina Jolie',
         position: 'Frontend Developer',
-        photo: '../img/what people say/photo1.png',
+        photo: 'img/what people say/photo1.png',
     },
     {
         content: 'Accusamus atqueconsectetur culpa dignissimos dolor dolorem dolores eaque enim esse facilis fugiat fugit illo impedit inincidunt ipsa labore maxime mollitia natus nesciunt, nihil numquam possimus provident quam quas quasi quiquidem rem similique sint suscipit velit voluptas voluptatibus?',
         author: 'Brad Pitt',
         position: 'Project Manager',
-        photo: '../img/what people say/photo2.png',
+        photo: 'img/what people say/photo2.png',
     },
     {
         content: 'Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quismassa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.',
         author: 'Hasan Ali',
         position: 'UX Designer',
-        photo: '../img/what people say/photo3.png',
+        photo: 'img/what people say/photo3.png',
     },
     {
         content: 'Cum ea et excepturi inventore ipsam iure namreprehenderit repudiandae veniam voluptatem! Asperiores consequuntur, dolore facere maiores nihil quosrecusandae saepe tempora voluptatum.',
         author: 'Demi Moore',
         position: 'Recruiter',
-        photo: '../img/what people say/photo4.png',
+        photo: 'img/what people say/photo4.png',
     },];
 
 let step = 0;

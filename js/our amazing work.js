@@ -2,18 +2,18 @@
 
 import {openPopup, popupClick, popupImage} from "./index.js";
 
-const ourWorksImgLinks = ['img/graphic design/graphic-design1.jpg', '../img/landing page/landing-page1.jpg', '../img/web design/web-design5.jpg', '../img/wordpress/wordpress1.jpg',
-    '../img/graphic design/graphic-design2.jpg', '../img/landing page/landing-page2.jpg', '../img/web design/web-design1.jpg', '../img/wordpress/wordpress2.jpg',
-    '../img/graphic design/graphic-design3.jpg', '../img/landing page/landing-page3.jpg', '../img/web design/web-design2.jpg', '../img/wordpress/wordpress3.jpg',
-    '../img/graphic design/graphic-design4.jpg', '../img/landing page/landing-page4.jpg', '../img/web design/web-design3.jpg', '../img/wordpress/wordpress4.jpg',
-    '../img/graphic design/graphic-design5.jpg', '../img/landing page/landing-page5.jpg', '../img/web design/web-design4.jpg', '../img/wordpress/wordpress5.jpg',
-    '../img/graphic design/graphic-design6.jpg', '../img/landing page/landing-page6.jpg', '../img/web design/web-design6.jpg', '../img/wordpress/wordpress6.jpg',
-    '../img/graphic design/graphic-design7.jpg', '../img/landing page/landing-page7.jpg', '../img/web design/web-design7.jpg', '../img/wordpress/wordpress7.jpg',
-    '../img/graphic design/graphic-design8.jpg', '../img/wordpress/wordpress8.jpg',
-    '../img/graphic design/graphic-design9.jpg', '../img/wordpress/wordpress9.jpg',
-    '../img/graphic design/graphic-design10.jpg', '../img/wordpress/wordpress10.jpg',
-    '../img/graphic design/graphic-design11.jpg',
-    '../img/graphic design/graphic-design12.jpg',];
+const ourWorksImgLinks = ['img/graphic design/graphic-design1.jpg', 'img/landing page/landing-page1.jpg', 'img/web design/web-design5.jpg', 'img/wordpress/wordpress1.jpg',
+    'img/graphic design/graphic-design2.jpg', 'img/landing page/landing-page2.jpg', 'img/web design/web-design1.jpg', 'img/wordpress/wordpress2.jpg',
+    'img/graphic design/graphic-design3.jpg', 'img/landing page/landing-page3.jpg', 'img/web design/web-design2.jpg', 'img/wordpress/wordpress3.jpg',
+    'img/graphic design/graphic-design4.jpg', 'img/landing page/landing-page4.jpg', 'img/web design/web-design3.jpg', 'img/wordpress/wordpress4.jpg',
+    'img/graphic design/graphic-design5.jpg', 'img/landing page/landing-page5.jpg', 'img/web design/web-design4.jpg', 'img/wordpress/wordpress5.jpg',
+    'img/graphic design/graphic-design6.jpg', 'img/landing page/landing-page6.jpg', 'img/web design/web-design6.jpg', 'img/wordpress/wordpress6.jpg',
+    'img/graphic design/graphic-design7.jpg', 'img/landing page/landing-page7.jpg', 'img/web design/web-design7.jpg', 'img/wordpress/wordpress7.jpg',
+    'img/graphic design/graphic-design8.jpg', 'img/wordpress/wordpress8.jpg',
+    'img/graphic design/graphic-design9.jpg', 'img/wordpress/wordpress9.jpg',
+    'img/graphic design/graphic-design10.jpg', 'img/wordpress/wordpress10.jpg',
+    'img/graphic design/graphic-design11.jpg',
+    'img/graphic design/graphic-design12.jpg',];
 
 const ourWorksImgWrapper = document.querySelector('.our_works_img_wrapper');
 
