@@ -1228,7 +1228,7 @@ body {
 .logo ::before {
   content: "";
   margin-right: 6px;
-  background-image: url("/img/icons/logo.svg");
+  background-image: url("../img/icons/logo.svg");
   background-position: center;
   background-position: center;
   background-repeat: no-repeat;

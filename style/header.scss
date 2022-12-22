@@ -52,7 +52,7 @@ body {
   ::before {
     content: '';
     margin-right: 6px;
-    background-image: url("/img/icons/logo.svg");
+    background-image: url("../img/icons/logo.svg");
     background-position: center;
     @include var.background-options;
     width: 58px;
