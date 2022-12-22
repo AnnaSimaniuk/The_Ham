@@ -1,0 +1,234 @@
+//_header.scss
+
+@use "var";
+
+//page_one
+
+body {
+  overflow-x: hidden;
+  user-select: none;
+}
+
+.page_one {
+  width: 100vw;
+  background-image: url("/img/Sections background/section-1(header).jpg");
+  @include var.background-options;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var.$primary-font;
+}
+
+.header {
+  @include var.flex-center;
+  flex-direction: column;
+}
+
+.navbar_wrapper {
+  width: 100vw;
+  height: 120px;
+  background: rgba(94, 93, 88, 0.6);
+  @include var.flex-center;
+}
+
+.navbar {
+  width: 1160px;
+  @include var.flex-center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 64px;
+  color: var.$primary-color;
+  font-weight: var.$bold;
+  font-size: 32px;
+  line-height: 48px;
+  position: relative;
+
+  span {
+    font-weight: var.$normal;
+    color: var.$white;
+  }
+
+  ::before {
+    content: '';
+    margin-right: 6px;
+    background-image: url("/img/icons/logo.svg");
+    background-position: center;
+    @include var.background-options;
+    width: 58px;
+    height: 67px;
+    position: absolute;
+    right: 133px;
+    top: -10px;
+  }
+
+  ::after {
+    content: 'H';
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    font-weight: var.$bold;
+    right: 152px;
+  }
+}
+
+.navbar_links_wrapper {
+  @include var.flex-center;
+  gap: 21px;
+  font-family: var.$primary-font;
+  font-weight: var.$bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  .navbar_link {
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    line-height: 1;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .search {
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  ::after {
+    display: block;
+    content: "";
+    background-color: var.$primary-color;
+    height: 2px;
+    width: 0;
+    left: 50%;
+    position: absolute;
+    top: 65px;
+    transition: width 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+
+  .navbar_link:hover {
+    color: var.$primary-color;
+  }
+
+  .navbar_link:hover:after {
+    width: 100%;
+  }
+
+  .navbar_link:focus:after {
+    width: 100%;
+  }
+}
+
+.header_title {
+  margin-top: 251px;
+  color: var.$white;
+  font-weight: var.$bold;
+  text-align: center;
+
+  .header_paragraph:first-child {
+    font-size: 35px;
+    text-transform: uppercase;
+
+    span {
+      color: var.$primary-color;
+    }
+  }
+
+  .header_paragraph:nth-child(2) {
+    margin-top: 22px;
+    font-size: 78px;
+    text-transform: uppercase;
+  }
+
+  .header_paragraph:last-child {
+    margin-top: 22px;
+    font-weight: var.$normal;
+    font-size: 34px;
+    color: var.$grey;
+  }
+}
+
+.header_btn_wrapper {
+  margin-top: 122px;
+  margin-bottom: 243px;
+  @include var.flex-center;
+  gap: 26px;
+  position: relative;
+}
+
+.header_btn {
+  position: relative;
+}
+.btn_wrap {
+  width: 169px;
+  height: 15px;
+  background-color: var.$white;
+  border-radius: 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.4s ease;
+}
+
+.btn {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: var.$bold;
+  text-align: center;
+  color: var.$white;
+  display: inline-block;
+  width: 169px;
+  height: 63px;
+  background-color: var.$primary-color;
+  border-radius: 8px;
+  position: relative;
+  left: 0;
+  top: 5px;
+  padding-top: 24px;
+  transition: all 0.4s ease;
+}
+
+.turquoise {
+  background-color: #00CBF6;
+  transition: all 0.4s ease;
+}
+
+.header_btn:hover .btn{
+  background-color: var.$primary-color-dark;
+  box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.5);
+}
+.header_btn:hover .btn_wrap {
+  width: 181px;
+  height: 75px;
+  left: -5px;
+}
+
+.header_btn:hover .turquoise {
+  background-color: #01a1c4;
+}
+
+.arrow_up {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transform: rotate(90deg);
+  transition: all 0.5s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.hide_arrow_up{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.line_up{
+  left: 6px;
+  height: 15px;
+}
+
