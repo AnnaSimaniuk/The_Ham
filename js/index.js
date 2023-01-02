@@ -1,5 +1,6 @@
 'use strict';
 
+import('./nav.js')
 import('./our services.js')
 import('./our amazing work.js')
 import('./breaking news.js')

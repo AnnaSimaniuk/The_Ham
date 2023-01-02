@@ -1266,13 +1266,6 @@ body {
   position: relative;
   transition: color 0.3s ease-in-out;
 }
-.navbar_links_wrapper .search {
-  display: inline-block;
-  width: 22px;
-  height: 20px;
-  stroke: currentColor;
-  fill: currentColor;
-}
 .navbar_links_wrapper ::after {
   display: block;
   content: "";
@@ -1291,8 +1284,93 @@ body {
 .navbar_links_wrapper .navbar_link:hover:after {
   width: 100%;
 }
-.navbar_links_wrapper .navbar_link:focus:after {
+
+.search-wrapper {
+  position: relative;
+}
+.search-wrapper .search_holder {
+  height: 31px;
+  width: 70px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 6px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.search-wrapper .search_input {
   width: 100%;
+  padding: 0 70px 0 20px;
+  opacity: 0;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  transform: translate(0, 60px);
+  transition: all 0.2s cubic-bezier(0, 0.105, 0.035, 1.57);
+  transition-delay: 0.3s;
+}
+.search-wrapper .search_icon {
+  background: transparent;
+  border: none;
+  width: 22px;
+  height: 20px;
+  padding-top: 4px;
+  cursor: pointer;
+  position: absolute;
+  transform: translateX(0);
+  transition: all 0.5s ease;
+}
+.search-wrapper .search {
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  stroke: rgba(255, 255, 255, 0.6);
+  fill: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s ease;
+}
+.search-wrapper .search_close {
+  position: absolute;
+  color: #18CFAB;
+  width: 22px;
+  height: 20px;
+  cursor: pointer;
+  top: 2px;
+  right: -7px;
+  transform: translateX(0);
+  transition: all 0.2s cubic-bezier(0.285, -0.45, 0.935, 0.11);
+  opacity: 0;
+}
+
+.search-wrapper.active .search_holder {
+  width: 250px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s cubic-bezier(0, 0.105, 0.035, 1.57);
+}
+.search-wrapper.active .search_input {
+  opacity: 1;
+  transform: translate(0, 10px);
+}
+.search-wrapper.active .search_icon {
+  transform: translateX(214px);
+  transition: all 0.5s cubic-bezier(0, 0.105, 0.035, 1.57);
+}
+.search-wrapper.active .search {
+  stroke: #18CFAB;
+  fill: #18CFAB;
+  transition: all 0.5s ease;
+}
+.search-wrapper.active .search_close {
+  opacity: 1;
+  transform: translateX(25px);
+  transition: all 0.6s cubic-bezier(0, 0.105, 0.035, 1.57);
+  transition-delay: 0.3s;
 }
 
 .header_title {

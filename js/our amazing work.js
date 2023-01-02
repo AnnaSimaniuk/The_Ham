@@ -124,7 +124,7 @@ ourWorksWrapper.addEventListener('click', e => {
         if (img.classList.contains('show_img_2')) filterImg(e, img);
     })
 })
-console.log(imageContainer.length)
+
 function filterImg(category, img) {
     if (category.target.textContent.toLowerCase() === img.getAttribute('data-category').toLowerCase()) {
         img.style.display = 'block';
