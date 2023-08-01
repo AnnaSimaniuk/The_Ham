@@ -4,7 +4,7 @@ The landing page is designed to demonstrate the power and flexibility of custom 
 
 For convenience, the project is hosted on [GitHub Pages](https://annasimaniuk.github.io/The_Ham/).
 
-![Preview](https://s11.gifyu.com/images/ScIuh.png)
+![Preview](https://s11.gifyu.com/images/ScIQf.png)
 
 ## Technologies Used
 
